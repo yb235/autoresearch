@@ -290,7 +290,7 @@ The first 10 steps don't count toward `total_training_time`. This is because `to
 ## MFU (Model FLOP Utilization)
 
 ```python
-H100_BF16_PEAK_FLOPS = 989.5e12  # ~990 TFLOPS
+H100_BF16_PEAK_FLOPS = 989.5e12  # ~990 teraFLOP/s
 
 steady_state_mfu = 100 * num_flops_per_token * TOTAL_BATCH_SIZE * (step - 10)
                    / total_training_time / H100_BF16_PEAK_FLOPS
